@@ -57,7 +57,7 @@ if show == 1:
 
 # find the contours in the thresholded image, then sort the contours
 # by their area, keeping only the largest one
-cnts,hierarchy = cv2.findContours(closed.copy(), cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)[:-2]
+cnts,hierarchy = cv2.findContours(closed.copy(), cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)[-2:]
 
 c = sorted(cnts, key = cv2.contourArea, reverse = True)[0]
 c1 = sorted(cnts, key = cv2.contourArea, reverse = True)[1]
