@@ -1,4 +1,4 @@
-# python detect_barcode.py --image images/barcode_01.jpg
+# python detect_barcode_opencv.py --image images/barcode_01.jpg
 
 # import the necessary packages
 import numpy as np
